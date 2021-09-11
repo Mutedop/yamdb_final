@@ -7,7 +7,7 @@ services:
     env_file:
       - ./.env
   web:
-    build: .
+    image: mutedop/yamdb:latest
     restart: always
     volumes:
       - static_value:/code/static/
